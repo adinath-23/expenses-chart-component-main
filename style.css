@@ -1,7 +1,6 @@
 body,
 h1,
 h2,
-h3,
 p {
     font-weight: 700;
     margin: 0px;
@@ -154,14 +153,13 @@ main h1 {
 
 
 .total {
-    color: black;
     padding: 1.5rem 0rem;
     display: flex;
     justify-content: space-between;
     border-top: 0.1rem solid hsl(28, 10%, 53%);
 }
 
-.total h3 {
+.total h2 {
     font-size: 1rem;
     color: hsl(28, 10%, 53%);
 }
@@ -172,6 +170,8 @@ main h1 {
 }
 
 .total div {
+    align-items: flex-end;
+
     display: flex;
 }
 
