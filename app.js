@@ -38,8 +38,8 @@ console.log(maxAmount)
 
 for (let barDetail of data) {
     const bar = document.createElement('div')
-    bar.setAttribute('day', barDetail.day)
-    bar.setAttribute('amount', `$${barDetail.amount}`)
+    bar.setAttribute('data-day', barDetail.day)
+    bar.setAttribute('data-amount', `$${barDetail.amount}`)
     if (barDetail.amount === maxAmount) {
         bar.classList.add('max')
     }

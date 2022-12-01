@@ -109,7 +109,7 @@ main h1 {
 .bar::after {
     position: absolute;
     color: hsl(28, 10%, 53%);
-    content: attr(day);
+    content: attr(data-day);
     padding-top: 0.5rem;
     top: 100%;
     left: 50%;
@@ -122,7 +122,7 @@ main h1 {
     transform: scale(0) translateX(-50%);
     z-index: 1;
     position: absolute;
-    content: attr(amount);
+    content: attr(data-amount);
     color: white;
     font-size: 0.8rem;
     background-color: hsl(25, 47%, 15%);
