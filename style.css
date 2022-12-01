@@ -1,3 +1,14 @@
+:root {
+    --clr-primary-400: hsl(10, 79%, 65%);
+    --clr-primary-200: hsl(10, 70%, 60%);
+    --clr-secondary-400: hsl(186, 34%, 60%);
+
+    --clr-neutral-900: hsl(25, 47%, 15%);
+    --clr-neutral-500: hsl(28, 10%, 53%);
+    --clr-neutral-200: hsl(27, 66%, 92%);
+    --clr-neutral-100: hsl(33, 100%, 98%);
+}
+
 body,
 h1,
 h2,
@@ -13,7 +24,7 @@ p {
 body {
     height: 100vh;
     font-size: 18px;
-    background-color: hsl(27, 66%, 92%)
+    background-color: var(--clr-neutral-200)
 }
 
 .container {
@@ -35,13 +46,13 @@ body {
 }
 
 header {
-    color: white;
+    color: var(--clr-neutral-100);
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background-color: hsl(10, 79%, 65%);
+    background-color: var(--clr-primary-400);
     width: 100%;
     border-radius: 10px;
     padding: 1.2rem;
@@ -73,7 +84,7 @@ header img {
 main {
     box-sizing: border-box;
     border-radius: 0.5rem;
-    background-color: hsl(33, 100%, 98%);
+    background-color: var(--clr-neutral-100);
     width: 100%;
     height: 26rem;
 }
@@ -81,7 +92,7 @@ main {
 main h1 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    color: hsl(25, 47%, 15%);
+    color: var(--clr-neutral-900);
 }
 
 .bars {
@@ -98,7 +109,7 @@ main h1 {
 
 .bar {
     border-radius: 0.2rem;
-    background-color: hsl(10, 79%, 65%);
+    background-color: var(--clr-primary-400);
     width: 100%;
     position: relative;
     cursor: pointer;
@@ -108,7 +119,7 @@ main h1 {
 
 .bar::after {
     position: absolute;
-    color: hsl(28, 10%, 53%);
+    color: var(--clr-neutral-500);
     content: attr(data-day);
     padding-top: 0.5rem;
     top: 100%;
@@ -123,9 +134,9 @@ main h1 {
     z-index: 1;
     position: absolute;
     content: attr(data-amount);
-    color: white;
+    color: var(--clr-neutral-100);
     font-size: 0.8rem;
-    background-color: hsl(25, 47%, 15%);
+    background-color: var(--clr-neutral-900);
     padding: 0.5rem;
     border-radius: 0.25rem;
     bottom: 100%;
@@ -140,15 +151,15 @@ main h1 {
 }
 
 .max {
-    background-color: hsl(186, 34%, 60%);
+    background-color: var(--clr-secondary-400);
 }
 
 .bar:hover {
-    background-color: hsla(10, 79%, 65%, 0.8);
+    background-color: var(--clr-primary-200);
 }
 
 .max:hover {
-    background-color: hsla(186, 34%, 60%, 0.8);
+    background-color: var(--clr-secondary-400);
 }
 
 
@@ -156,16 +167,16 @@ main h1 {
     padding: 1.5rem 0rem;
     display: flex;
     justify-content: space-between;
-    border-top: 0.1rem solid hsl(28, 10%, 53%);
+    border-top: 0.1rem solid --clr-neutral-500;
 }
 
 .total h2 {
     font-size: 1rem;
-    color: hsl(28, 10%, 53%);
+    color: var(--clr-neutral-500);
 }
 
 .total p {
-    color: hsl(25, 47%, 15%);
+    color: var(--clr-neutral-900);
 
 }
 
